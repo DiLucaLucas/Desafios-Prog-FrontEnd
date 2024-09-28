@@ -1,0 +1,60 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+
+/* Contenedor para centrar el contenido */
+.container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el botón */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: lightblue;
+}
+
+/* Spinner oculto inicialmente */
+.spinner {
+    margin-top: 20px;
+    font-size: 40px;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilos para hacer que el spinner gire */
+.spinner i {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}

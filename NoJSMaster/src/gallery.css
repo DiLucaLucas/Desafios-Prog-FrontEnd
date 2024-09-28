@@ -1,0 +1,33 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #150024, #111111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.image-row img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 8px;
+}
+
+/* Animación al pasar el mouse por encima */
+.image-row img:hover {
+    transform: scale(3);
+    filter: brightness(1.2) contrast(1.1);
+}
